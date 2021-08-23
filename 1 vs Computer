@@ -1,0 +1,37 @@
+import random
+
+print("Rock... \nPaper... \nScissors...")
+
+Player_1 = input("make your move :").lower()
+c_move = random.randint(0, 2)
+
+if c_move == 0:
+    c_move = "rock"
+elif c_move == 1:
+    c_move = "paper"
+else:
+    c_move = "scissors"
+
+
+print(f"\nyou choosed : {Player_1} \ncomputer choosed : {c_move}")
+
+if Player_1 == c_move :
+    print("tie!")
+
+elif Player_1 == "rock":
+    if c_move == "paper":
+        print("defeat!")
+    elif c_move == "scissors":
+        print("victory!")
+elif Player_1 == "paper":
+    if c_move == "rock":
+        print("victory!")
+    elif c_move == "scissors":
+        print("defeat!")
+elif Player_1 == "scissors":
+    if c_move == "rock":
+        print("defeat!")
+    elif c_move == "paper":
+        print("victory!")
+else:
+    print("your option is not valid!")
