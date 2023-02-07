@@ -22,4 +22,4 @@ elif player_1 == "scissors" and player_2 == "paper" :
 elif player_1 == player_2 :
     print("that's a tie!")
 else :
-    print("write correctly you stupid mother f*cker!")
+    print("Something is wrong! Try again...")
